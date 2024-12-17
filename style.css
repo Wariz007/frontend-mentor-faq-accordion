@@ -17,19 +17,31 @@ html, body{
     position: relative;
 }
 
+/*code for backgrounds*/
 #first-background{
     background-color: var(--Dark-purple);
     width: 100%;
-    height: 300px;
+    height: 50%;
     background-image: url("assets/images/background-pattern-desktop.svg");
 }
 #second-background{
     background-color: var(--Light-pink);
-    height: 100%
+    height: 50%;
 }
 
+/*code for h1 and star icon*/
+#heading-and-star{
+    display: flex;
+    align-items: center;
+}
+#heading-and-star img{
+    margin-right: 1rem;
+    width: 40px;
+}
+
+/*code for resetting h1 and p tags*/
 h1{
-    font-family: "work sans,";
+    font-family: "work sans";
     font-size: 3rem;
     margin: 0;
 }
@@ -38,6 +50,7 @@ p{
     font-weight: bold;
 }
 
+/*code for the main content container*/
 #main-content-container{
     width: 500px;
     position: absolute;
@@ -47,24 +60,50 @@ p{
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    border: 2px solid magenta;
+    box-shadow: 8px 8px 50px 10px rgba(0, 0, 0, 0.251);
 }
 
+/*code for questions*/
 .questions{
     border-top: 2px solid rgba(0, 0, 0, 0.116);
 }
 
+/*code for questions and icon container*/
 .Q-and-icon{
     display: flex;
     justify-content: space-between;
-    /*border: 2px solid magenta;*/
 }
 
-#heading-and-star{
-    display: flex;
-    align-items: center;
+/*code for answers*/
+.answers{
+    font-weight: 500;
+    opacity: 40%;
+    color: var(--Dark-purple);
+    margin-top: 0;
+    display: none;
 }
-#heading-and-star img{
-    margin-right: 1rem;
-    width: 40px;
+
+/*code for icon buttons*/
+.minus-sign{
+    display: none;
+}
+.plus-sign{
+    display: block;
+}
+
+/*code for classList*/
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+
+
+/*code for btn*/
+.btn{
+    border: 1px solid;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
 }
